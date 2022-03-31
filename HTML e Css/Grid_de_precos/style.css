@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #f0f0f0;
+}
+
+.container-box{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 300px;
+    margin: 10% 20%;
+    box-shadow: 0px 0px 50px -30px #000000;
+    border-radius: 10px;
+}
+
+.container-box2{
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 100% ;
+    border-radius: 10px;
+}
+
+/*                      Configuração dos blocos                     */
+
+.superior{
+    background-color: #fffeff;
+    color:#afb2bb;
+    border: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px ;
+}
+
+.esquerdo{
+    background-color: #2cb3af;
+    border-bottom-left-radius: 10px;
+}
+
+.direito{
+    background-color: #4bbcbf;
+    border-bottom-right-radius: 10px;
+ 
+}
+
+/*                      Configuração conteudo dos blocos                     */
+/*      Configuração conteudo superior       */
+.ConteudoSuperior{
+    margin: 50px;
+}
+
+.superior h2{
+    color:#49ada1;
+    margin-bottom: 30px;
+}
+
+.ConteudoSuperior h3{
+    color:#c8d875;
+    margin-bottom: 20px;
+}
+
+.ConteudoSuperior p {
+    line-height: 30px;
+}
+
+/*      Configuração conteudo esquerdo       */
+.ConteudoEsquerdo{
+    margin: 50px;
+    color: #ffffff;
+}
+
+.ConteudoEsquerdo h3 {
+    margin-bottom: 20px;
+}
+
+.ConteudoEsquerdo p{
+    margin-bottom: 10px;
+}
+
+.ConteudoEsquerdo span{
+    font-size: 35px;
+    color: #ffffff;
+}
+
+.PerMonth{
+    color: #58cbcc;
+}
+
+.ConteudoEsquerdo button{
+    height: 50px;
+    width: 100%;
+    border: none;
+    margin-top: 20px;
+    border-radius: 6px;
+    background-color: #bfdf32;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.ConteudoEsquerdo button a{
+    padding: 15px 108px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*      Configuração conteudo direito       */
+
+.ConteudoDireito{
+    margin: 50px;
+}
+
+.ConteudoDireito h3{
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.ConteudoDireito ul{
+    list-style: none;
+    font-size: 0.9em;
+    line-height: 20px;
+    color: #8feaeb;
+}
+
+
+
+
