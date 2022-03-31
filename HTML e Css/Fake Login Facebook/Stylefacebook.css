@@ -1,0 +1,206 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f2f5;
+}
+
+main{
+    
+    padding: 20px 0;
+    display:flex;
+    width: 980px;
+    padding-bottom: 112px;
+    padding-top: 72px;
+ 
+}
+
+.box{
+    display: flex;
+    margin-left: 150px;
+    margin-top: 70px;
+    margin-right: 90px;
+    position: relative;
+    width: 980px;
+
+}
+
+.facebook{
+    box-sizing: border-box;
+    margin-right: 0;
+    padding-right: 30px;
+    margin-top: 20px;
+    width: 580px;
+ 
+}
+
+.facebook h1{
+    font-size: 3em ;
+    color: #1877f2;
+    margin: 0 auto;
+    padding-top: 30px;
+    position: relative;
+    width: 580px;
+}
+
+.facebook p{
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    width: 500px;
+    padding: 0 0 12px 0;
+}
+
+aside{
+    display: block;
+    height: 456px;
+    width: 396px;
+ 
+}
+
+form{
+    height: 340px;
+    width: 360px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    border-top: none;
+    box-shadow: 1px 10px 20px 0.05px #0000002f;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+form input{
+    display: block;
+    width: 90%;
+    margin: auto;
+    padding: 14px 16px;
+    border: solid 1px #dddfe2;
+    border-radius: 6px;
+    margin-top: 10px;
+    outline: none;
+    font-size: 17px;
+    
+}
+
+form ::placeholder{
+    font-size: 17px;
+    letter-spacing: 0.05rem;
+    color:#90949c;
+}
+
+.form-button{
+    display: block;
+    text-align: center;
+    
+}
+
+
+.form-button button{
+    margin: 10px auto;
+    height: 45px;
+    cursor: pointer;
+}
+
+.Entrar:hover{
+    background-color: #166fe5;
+    transition: .3s;
+}
+
+.form-button p{
+    color: #1877f2;
+    font-size: 14px;
+    padding-top: 16px ;
+}
+
+.Entrar{
+    width: 100%;
+    background-color: #1877f2;
+    border-radius: 6px;
+    border: 0;
+}
+
+.Entrar p{
+    color: white;
+    font-size: 1.5em;
+    margin-top: -16px;
+}
+
+.NovaConta{
+    height: 30px;
+    background-color: #42b72a;
+    border-radius: 6px;
+    border: 0;
+    padding: 0 16px;
+}
+
+.NovaConta:hover{
+    background-color: #41af2b;
+    transition: .3s;
+}
+
+.NovaConta p{
+    color: white;
+    font-size: 1.1em;
+    margin-top: -18px;
+}
+
+.CriarPagina {
+    font-size: 14px;
+    text-align: center;
+    padding-top: 28px;
+    color: black;
+}
+
+.CriarPagina a , a:link{
+    text-decoration: none;
+    color: black;
+    margin: 0;
+}
+
+.CriarPagina a:hover {
+    border-bottom: solid 1px black;
+}
+
+hr{
+    color: #dbdde071;
+    margin:20px 16px;
+}
+
+footer hr{
+    margin: 8px 0px 8px 0px ;
+    
+}
+footer{
+    position:absolute;
+    bottom: 0;
+    background-color: #ffffff;
+    height: 175px; 
+}
+
+.rodape{
+    margin: 10px 150px 0 150px;
+}
+
+footer p {
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.rodape01{
+    padding-right: 0px;
+}
+
+footer a ,footer a:link , .meta{
+    margin-right: 15px;
+    color: #90949c;
+}
+
+footer a:hover{
+    border-bottom: solid 1px black;
+    color:black;
+}
