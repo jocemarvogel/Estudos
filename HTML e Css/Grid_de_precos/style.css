@@ -105,6 +105,12 @@ body{
     color: #ffffff;
 }
 
+.ConteudoEsquerdo button a:hover{
+    background-color: #b1ce30;
+    border-radius: 6px;
+    transition: 0.4s;
+}
+
 /*      Configuração conteudo direito       */
 
 .ConteudoDireito{
