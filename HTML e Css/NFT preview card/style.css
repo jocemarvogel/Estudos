@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+main{
+    display: block;
+    background-color: #0d192b;
+    height: 550px;
+    width: 320px;
+    margin: 5% auto;
+    border-radius: 20px;
+}
+
+.equilibrium{
+    margin: 25px 60px 0 25px;
+    border-radius: 10px;
+}
+
+.conteudo{
+    margin: 30px;
+}
+
+h3{
+    color: white ;
+    margin-bottom: 20px; ;
+}
+
+
+p {
+    color: #8bacda;
+    margin-bottom: 20px ;
+}
+
+.icones{
+    display: flex;
+}
+
+.icone01{
+    vertical-align: middle;
+    text-align: left;
+}
+
+.icone02{
+    text-align: right;
+}
+
+hr{
+    
+    border: solid 1px #8bacda3b;
+}
+
+span{
+    color: white ;
+}
+
+.rodape{
+    display: block;
+    margin-top: -10px;
+}
+
+.rodape p{
+    font-size: 0.9em;
+    margin: 30px;
+}
+
+.rodape img{
+    border: solid 1px white;
+    border-radius: 100%;
+    margin-right: 15px;
+    
+}
+
+
+
