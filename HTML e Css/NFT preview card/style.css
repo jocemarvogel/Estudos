@@ -31,27 +31,24 @@ h3{
     margin-bottom: 20px; ;
 }
 
-
 p {
     color: #8bacda;
     margin-bottom: 20px ;
 }
 
-.icones{
+.icones ul,p{
+    list-style: none;
     display: flex;
+    justify-content: space-between;
+    color: #8bacda;
+    margin-bottom: 15px;
 }
 
 .icone01{
-    vertical-align: middle;
-    text-align: left;
-}
-
-.icone02{
-    text-align: right;
+    color:#23d2d7;
 }
 
 hr{
-    
     border: solid 1px #8bacda3b;
 }
 
@@ -60,8 +57,8 @@ span{
 }
 
 .rodape{
-    display: block;
-    margin-top: -10px;
+    display: flex;
+    margin-top: -30px;
 }
 
 .rodape p{
