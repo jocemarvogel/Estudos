@@ -1,53 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  
-  
-  <title>Frontend Mentor | NFT preview card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
-    .attribution { font-size: 11px; text-align: center; color: white; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>,
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: white;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    ,
     <main>
-        <section>
-            <a><img class="equilibrium" src="./img/image-equilibrium.jpg" width="270px"></a>
-            
-            <div class="conteudo">
-                <h3>Equilibrium #3429</h3>
+      <section>
+        <!-- A img que aparece SEMPRE estará a frente do background -->
+        <!-- Uma forma de resolver é usando a propriedade after -->
+        <a class="container"
+          ><img
+            class="equilibrium"
+            src="./img/image-equilibrium.jpg"
+            width="270px"
+        /></a>
 
-                <p>Our Equilibrium collection promotes balance and calm.</p>
+        <div class="conteudo">
+          <h3>Equilibrium #3429</h3>
 
-                <div class="icones">
-                    <ul>
-                        <li class="icone01"><img src="./img/icon-ethereum.svg"> 0.041 ETH</li>
-                        <li class="icone02"><img src="./img/icon-clock.svg"> 3 days left</li>
-                    </ul>
-                </div>
-                
-                <hr>
-                
-            </div>
-            <div class="rodape">
-                <p><img src="./img/image-avatar.png" width="35px">Creation of <span> &nbsp; Jules Wyvern</span></p>
-            </div>
-        </section>
+          <p>Our Equilibrium collection promotes balance and calm.</p>
+
+          <div class="icones">
+            <ul>
+              <li class="icone01">
+                <img src="./img/icon-ethereum.svg" /> 0.041 ETH
+              </li>
+              <li class="icone02">
+                <img src="./img/icon-clock.svg" /> 3 days left
+              </li>
+            </ul>
+          </div>
+
+          <hr />
+        </div>
+        <div class="rodape">
+          <p>
+            <img src="./img/image-avatar.png" width="35px" />Creation of
+            <span> &nbsp; Jules Wyvern</span>
+          </p>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="attribution">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-            Coded by <a href="#">Jocemar Vogel</a>.
-        </div>
-    </footer>   
-</body>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Jocemar Vogel</a>.
+      </div>
+    </footer>
+  </body>
 </html>

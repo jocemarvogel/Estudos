@@ -1,88 +1,142 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Outfit', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
 }
 
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
 
-main{
-    display: block;
-    background-color: #0d192b;
-    height: 540px;
-    width: 320px;
-    margin: 5% auto;
-    border-radius: 20px;
+main {
+  display: block;
+  background-color: #0d192b;
+  height: 540px;
+  width: 320px;
+  margin: 5% auto;
+  border-radius: 20px;
 }
 
-.equilibrium{
-    margin: 25px 60px 0 25px;
-    border-radius: 10px;
-    
+.equilibrium {
+  margin: 25px 60px 0 25px;
+  border-radius: 10px;
 }
 
-.equilibrium:hover{
-    background-image: url(img/icon-view.svg);
-    width: 270px;
-    height: 270px;
-    background-color: #23d2d7;
-    background-repeat: no-repeat;
-    z-index: 3;
+/* =======================================
+    Backgrounds SEMPRE estarão por tras do conteúdo
+    então não adianta nada essas linhas de código
+
+.equilibrium:hover {
+  background-image: url(img/icon-view.svg);
+  width: 270px;
+  height: 270px;
+  background-color: #23d2d7;
+  background-repeat: no-repeat;
+  z-index: 3;
+} 
+
+*/ /* ====================================== */
+/*  O elemento <a> está servindo como um container/bloco
+    para a imagem, então apenas classifiquei ele pra
+    poder trabalhar com sua estilização
+*/
+.container {
+  /*  Serve pra que possa ser usado melhor o 
+    position: absolute; no elemento filho 
+    (qualquer coisa dentro)
+*/
+  position: relative;
 }
 
-.conteudo{
-    margin: 30px;
+/*  ::after vai criar essa parte azul e com 
+    o icone do olho (icon-view.svg)
+*/
+.container::after {
+  /*  O conteúdo desse elemento criado será
+    uma img, porém poderia ser texto tbm
+*/
+  content: url(img/icon-view.svg);
+  /*  Posicionando corretamente
+*/
+  position: absolute;
+  text-align: center;
+  bottom: 20%;
+  padding-block: 110px;
+  width: 270px;
+  margin: 25px 60px 0 25px;
+  border-radius: 10px;
+  /*  Obs.: bg-color usando RedGreenBlueAlpha (rgba),
+    o Alpha altera apenas a opacidade do fundo. Já
+    opacity: 0; altera a opacidade de todo o elemento
+    juntamente de seu conteúdo (a img nesse caso)
+*/
+  background-color: rgba(35, 209, 215, 0.5);
+  opacity: 0;
+  /*  Uma transição pra estilizar a aparição desse fundo,
+    e alterando o cursor pra parecer clicavél
+*/
+  transition: 0.2s ease-in;
+  cursor: pointer;
 }
 
-h3{
-    color: white ;
-    margin-bottom: 20px; ;
+/*  Quando o container (elemento <a>) estiver
+    na mira do mouse, o ::after mudará o
+    opacity para 1
+*/
+.container:hover::after {
+  opacity: 1;
+}
+
+/* ====================================== */
+
+.conteudo {
+  margin: 30px;
+}
+
+h3 {
+  color: white;
+  margin-bottom: 20px;
 }
 
 p {
-    color: #8bacda;
-    margin-bottom: 20px ;
+  color: #8bacda;
+  margin-bottom: 20px;
 }
 
-.icones ul,p{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    color: #8bacda;
-    margin-bottom: 15px;
+.icones ul,
+p {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  color: #8bacda;
+  margin-bottom: 15px;
 }
 
-.icone01{
-    color:#23d2d7;
+.icone01 {
+  color: #23d2d7;
 }
 
-hr{
-    border: solid 1px #8bacda3b;
+hr {
+  border: solid 1px #8bacda3b;
 }
 
-span{
-    color: white ;
+span {
+  color: white;
 }
 
-.rodape{
-    display: flex;
-    margin-top: -40px;
+.rodape {
+  display: flex;
+  margin-top: -40px;
 }
 
-.rodape p{
-    font-size: 0.9em;
-    margin: 30px;
-    align-items: center;
+.rodape p {
+  font-size: 0.9em;
+  margin: 30px;
+  align-items: center;
 }
 
-.rodape img{
-    border: solid 1px white;
-    border-radius: 100%;
-    margin-right: 15px;
-    
+.rodape img {
+  border: solid 1px white;
+  border-radius: 100%;
+  margin-right: 15px;
 }
-
-
-
