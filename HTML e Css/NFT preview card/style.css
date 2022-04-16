@@ -20,16 +20,34 @@ main{
 .equilibrium{
     margin: 25px 60px 0 25px;
     border-radius: 10px;
-    
 }
 
-.equilibrium:hover{
-    background-image: url(img/icon-view.svg);
-    width: 270px;
+.fundo{
+    position: relative;
+}
+
+.frente{
+    background-color:#23d2d7;
     height: 270px;
-    background-color: #23d2d7;
-    background-repeat: no-repeat;
-    z-index: 3;
+    width: 270px;
+    margin: 25px 60px 0 25px;
+    border-radius: 10px;
+    padding-bottom: -25px;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.fundo:hover .frente{
+    visibility: visible;
+    opacity: none;
+}
+
+.view{
+    margin: 105px;   
 }
 
 .conteudo{
@@ -38,7 +56,12 @@ main{
 
 h3{
     color: white ;
-    margin-bottom: 20px; ;
+    margin-bottom: 20px;
+}
+
+h3:hover{
+    color: #23d2d7;
+    cursor: pointer;
 }
 
 p {
@@ -64,6 +87,11 @@ hr{
 
 span{
     color: white ;
+}
+
+span:hover{
+    color: #23d2d7;
+    cursor: pointer;
 }
 
 .rodape{
